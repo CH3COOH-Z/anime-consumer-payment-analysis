@@ -150,9 +150,6 @@ The F1-score of the majority baseline is high because roughly 90% of observation
 
 ![PCA variance](reports/figures/pca_variance.png)
 
-### Logistic regression coefficients
-
-![Logistic regression coefficients](reports/figures/top_coefficients.png)
 The analysis script generates:
 
 - target class distribution;
