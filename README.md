@@ -129,17 +129,30 @@ Using 5-fold stratified cross-validation on the leakage-reduced feature set:
 
 | Metric | Logistic Regression | Majority Baseline |
 |---|---:|---:|
-| Balanced accuracy | ~0.62 | 0.50 |
-| ROC-AUC | ~0.61 | 0.50 |
-| F1-score | ~0.82 | ~0.95 |
-| Average precision | ~0.92 | ~0.90 |
+| Balanced accuracy | 0.62 | 0.50 |
+| ROC-AUC | 0.61 | 0.50 |
+| F1-score | 0.82 | 0.95 |
+| Average precision | 0.92 | 0.90 |
 
 The F1-score of the majority baseline is high because roughly 90% of observations belong to the positive class. This is exactly why balanced accuracy and ROC-AUC are more informative here.
 
-The modest leakage-free performance is more credible than the near-perfect scores obtained when post-payment variables are included.
-
 ## Visual outputs
 
+### Target distribution
+
+![Target distribution](reports/figures/target_distribution.png)
+
+### Confusion matrix
+
+![Confusion matrix](reports/figures/confusion_matrix.png)
+
+### PCA explained variance
+
+![PCA variance](reports/figures/pca_variance.png)
+
+### Logistic regression coefficients
+
+![Logistic regression coefficients](reports/figures/top_coefficients.png)
 The analysis script generates:
 
 - target class distribution;
@@ -175,7 +188,6 @@ anime-consumer-payment-analysis/
 │
 ├── data/
 │   ├── README.md
-│   └── raw/
 │
 └── reports/
     ├── figures/
